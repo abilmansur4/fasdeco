@@ -135,3 +135,13 @@ https://flickity.metafizzy.co
 .flickity-page-dots .dot.is-selected {
   opacity: 1;
 }
+
+@media screen and (min-width: 1024px) {
+	.flickity-prev-next-button.previous { left: -45px; }
+	.flickity-prev-next-button.next { right: -45px; }
+}
+
+@media screen and (min-width: 1366px) {
+	.flickity-prev-next-button.previous { left: -70px; }
+	.flickity-prev-next-button.next { right: -70px; }
+}

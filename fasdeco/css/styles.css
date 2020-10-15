@@ -352,7 +352,7 @@ Hero
 ========================================================================== */
 .hero {
   min-height: 750px;
-  background: linear-gradient(to bottom, rgba(161, 161, 161, 0.137), rgba(255, 255, 255, 0.342)), url("../img/tr1.jpg") center center;
+  background: linear-gradient(to bottom, rgba(17, 17, 17, 0.76), rgba(17, 17, 17, 0.342)), url("../img/tr1.jpg") center center;
   background-size: cover;
   position: relative; }
   .hero .down-arrow a {
@@ -1400,7 +1400,7 @@ you can use the generic selector below, but it's slower:
     top: 35px;
     left: 0; */
     margin-bottom: 50px;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.938), rgba(22, 22, 22, 0.801)), url("../img/travertin2.jpg") center center;
+    background: linear-gradient(to bottom, rgba(17, 17, 17, 0.678), rgba(56, 56, 56, 0.473)), url("../img/travertin2.jpg") center center;
     background-size: cover;
   }
 
@@ -1543,18 +1543,49 @@ you can use the generic selector below, but it's slower:
     color: #ffffff;
   }
 
-  #whatsapp-button {
-    position: fixed;
-    bottom: 35px;
-    left: 55px;
-    width: 60px;
-    height: 60px;
-    fill: #40C351;
-    /* background-color: #FFFFFF; */
-    z-index: 999;
-  }
-
   .gallery-cell-full {
     width: 103%;
     text-align: center;
   }
+
+  #whatsapp-button {
+    fill: #40C351;
+  }
+
+  .outercircle {
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+    background-color: #ffffff;
+    box-shadow: 2px 3px 6px 0 rgb(0, 0, 0);
+    position: fixed;
+    z-index: 999;
+    opacity: 0.9;
+    bottom:35px;
+    left: 55px;
+    transform: scale(1.2);
+    animation: outerbeat 1.5s infinite linear forwards;
+  }
+
+@keyframes outerbeat {
+    0% {transform: scale(1.2);}
+    10% {transform: scale(1.2);}
+    50% {transform: scale(1.3);}
+    60% {transform: scale(1.25);}
+    75% {transform: scale(1.3);}
+}
+
+#beforeafter {
+  margin-top: 100px;
+}
+
+.centered {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
