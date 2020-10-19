@@ -1548,6 +1548,11 @@ you can use the generic selector below, but it's slower:
     text-align: center;
   }
 
+  .before-after-img {
+    width: 700px;
+    height: 500px;
+  }
+
   #whatsapp-button {
     fill: #40C351;
   }
