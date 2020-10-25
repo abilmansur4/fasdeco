@@ -1,9 +1,14 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 @import url(http://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,300italic,700,700italic);
 @import url(http://fonts.googleapis.com/css?family=Nunito:400,300,700);
+/* @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap); */
 /* ==========================================================================
 Typography
 ========================================================================== */
+.hero {
+  font-family: "Monsterrat", sans-serif;
+}
+
 p {
   font-size: 15px;
   line-height: 29px;
@@ -59,23 +64,24 @@ h5 {
   border-color: #FF5274; } */
 
 .btn-fill {
-  color: rgb(0, 0, 0);
-  border: solid 2px #fbd84a;
-  border-radius: 40px;
+  font-weight: 700;
+  color: #ffffff;
+  border: solid 2px #555555;
+  border-radius: 16px;
   display: inline-block;
   text-transform: uppercase;
-  background-color: #fbd84a; }
+  background-color: #555555; }
 
 .btn-fill:hover, .btn-fill:focus {
   color: #fff;
-  background-color: #fbd84a;
-  border-color: #fbd84a; }
+  background-color: #616161;
+  border-color: #616161; }
 
 .btn-small {
   padding: 8px 40px; }
 
 .btn-large {
-  padding: 15px 40px; }
+  padding: 12px 30px; }
 
 .btn-margin-right {
   margin-right: 20px; }
@@ -278,8 +284,8 @@ Waypoinsts
   -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s; }
 
-.bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight, .bounceInDown {
-  visibility: visible; }
+/* .bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight, .bounceInDown {
+  visibility: visible; } */
 
 /* ==========================================================================
 Navigation
@@ -351,10 +357,13 @@ Navigation
 Hero
 ========================================================================== */
 .hero {
-  min-height: 750px;
-  background: linear-gradient(to bottom, rgba(17, 17, 17, 0.76), rgba(17, 17, 17, 0.342)), url("../img/tr1.jpg") center center;
+  min-height: 100vh;
+  /* background: linear-gradient(to right, rgb(255, 230, 0), rgba(255, 230, 0, 0.226)), url("../img/fasdeco-bg.jpeg") center center; */
+  background: linear-gradient(90deg, rgba(255,220,0,1) 14%, rgba(255,220,0,0.8813900560224089) 43%, rgba(255,220,0,0.06066176470588236) 100%), url("../img/fasdeco-bg.jpeg");
+  background-position: right;
   background-size: cover;
-  position: relative; }
+  position: relative; 
+}
   .hero .down-arrow a {
     color: #fff; }
   .hero h1 {
@@ -363,12 +372,15 @@ Hero
     margin-bottom: 40px; }
   .hero p.intro {
     color: #fff;
-    text-shadow: #000000 2px 2px 4px;
-    font-size: 40px;
-    font-weight: 300;
-    margin-bottom: 40px; }
+    text-shadow: #000000 1px 1px 2px;
+    font-size: 56px;
+    font-weight: 800;
+    margin-bottom: 40px; 
+    /* float: left; */
+    text-align: left;
+  }
   .hero .hero-content {
-    padding-top: 24%; }
+    padding-top: 16%; }
   
     .hero_list {
       display: flex;
@@ -460,10 +472,10 @@ header {
             
 
 .down-arrow {
-  color: #fff;
-  font-size: 30px;
+  color: #616161;
+  font-size: 60px;
   position: absolute;
-  bottom: 30px;
+  bottom: 40px;
   left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
@@ -1444,13 +1456,15 @@ you can use the generic selector below, but it's slower:
   }
 
   .nav-link {
-    /* color: #ffffff; */
+    color: #ffffff !important;
+    font-weight: 600;
+    font-size: 20px;
     /* padding: 15px 20px; */
   }
 
   #navbar {
     z-index: 99999;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: #333;
     /* float: right; */
   }
@@ -1470,10 +1484,11 @@ you can use the generic selector below, but it's slower:
   }
 
   .navbar-moy {
-    background-color: #141414;
+    /* background-color: #141414; */
     z-index: 999;
     width: 100%;
-    position: fixed;
+    /* float: left; */
+    /* position: fixed; */
     display: flex;
     flex-direction: row;
   }
@@ -1593,4 +1608,73 @@ you can use the generic selector below, but it's slower:
   font-size: 20px;
   font-weight: 500;
   color: #fff;
+}
+
+#arrow-down {
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  transform: rotate(90deg);
+}
+
+.carousel {
+  /* background: #FAFAFA; */
+  margin-bottom: 40px;
+}
+
+.carousel-img {
+  width: 800px;
+  height: 600px;;
+  /* top: 0; */
+  bottom: 0;
+  object-fit: contain;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: 80vH;
+  /* margin-right: 10px; */
+  /* background: #8C8; */
+  /* border-radius: 5px; */
+  /* counter-increment: carousel-cell; */
+  text-align: center;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  /* content: counter(carousel-cell); */
+  line-height: 200px;
+  font-size: 80px;
+  /* color: white; */
+}
+
+.carousel-nav .carousel-cell {
+  height: 80px;
+  width: 100px;
+}
+
+.carousel-nav .carousel-cell:before {
+  font-size: 50px;
+  line-height: 80px;
+}
+
+.carousel-nav .carousel-cell.is-nav-selected {
+  /* background: #ED2; */
+}
+
+.carousel-nav-img {
+  width: 60%;
+  height: 60%;
+}
+
+
+/* Modal Forma Svyazi */
+.ch {
+  margin-left: 10px;
+}
+
+.form-control {
+  width: 90%; 
 }

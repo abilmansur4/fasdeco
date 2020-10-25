@@ -49,6 +49,20 @@
 
 @media screen and (max-width:1024px) {
 
+	.carousel-cell {
+		width: 108%;
+		height: 60vh;
+		/* text-align: center; */
+	}
+
+	.carousel-img {
+		width: 1024px;
+		height: 700px;
+		/* top: 0; */
+		/* bottom: 0; */
+		object-fit: contain;
+	}
+
 	.header-logo {
 		width: 45%;
 	}
@@ -384,6 +398,19 @@
 			width: 700px;
 			height: 420px;
 		} */
+		.carousel-cell {
+			width: 108%;
+			height: 60vh;
+			/* text-align: center; */
+		}
+
+		.carousel-img {
+			width: 768px;
+			height: 600px;
+			/* top: 0; */
+			/* bottom: 0; */
+			object-fit: contain;
+		}
 
 		.intro-title h2 {
 			font-size: 34px;
@@ -583,6 +610,31 @@
 	}
 
 	@media screen and (max-width: 414px) {
+
+		.carousel-img {
+			width: 375px;
+			height: 320px;;
+			/* top: 0; */
+			bottom: 0;
+			object-fit: contain;
+		}
+
+		.carousel-cell {
+			width: 103%;
+			height: 50vh;
+		}
+
+		.flickity-prev-next-button.previous {
+			left: 10px;
+			width: 30px;
+			height: 30px;
+		}
+
+		.flickity-prev-next-button.next {
+			width: 30px;
+			height: 30px;
+		}
+
 		.navbar-brand {
 			width: 80%;
 		}
@@ -610,7 +662,9 @@
 		}
 
 		.hero p.intro {
-			font-size: 18px;
+			font-size: 30px;
+			margin-bottom: 10px;
+			text-align: center;
 		}
 
 		.section-padding {
@@ -688,6 +742,30 @@
 
 	@media screen and (max-width: 375px) {
 
+		.carousel-img {
+			width: 375px;
+			height: 320px;;
+			/* top: 0; */
+			bottom: 0;
+			object-fit: contain;
+		}
+
+		.carousel-cell {
+			width: 103%;
+			height: 50vh;
+		}
+
+		.flickity-prev-next-button.previous {
+			left: 10px;
+			width: 30px;
+			height: 30px;
+		}
+
+		.flickity-prev-next-button.next {
+			width: 30px;
+			height: 30px;
+		}
+
 		.navbar-brand {
 			width: 78%;
 		}
@@ -707,7 +785,9 @@
 		}
 
 		.hero p.intro {
-			font-size: 16px;
+			font-size: 26px;
+			margin-bottom: 10px;
+			text-align: center;
 		}
 
 		/* .hero_list span{
