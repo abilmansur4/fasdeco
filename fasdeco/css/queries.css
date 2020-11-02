@@ -33,7 +33,7 @@
 	}
 
 	.hero .hero-content {
-		padding-top: 18%;
+		padding-top: 16%;
 	}
 
 	.carousel-item-content form {
@@ -171,7 +171,7 @@
 	}
 
 	.hero .hero-content {
-		padding-top: 20%;
+		padding-top: 18%;
 	}
 
 	.header-nav {
@@ -423,7 +423,7 @@
 		}
 
 		.hero .hero-content {
-			padding-top: 36%;
+			padding-top: 30%;
 		}
 
 		.hero-content h1 {
@@ -551,7 +551,7 @@
 
 	@media screen and (max-width:480px) {
 		.hero .hero-content {
-			padding-top: 41%;
+			padding-top: 36%;
 		}
 
 		.hero .btn {
@@ -610,6 +610,10 @@
 	}
 
 	@media screen and (max-width: 414px) {
+
+		.header-logo {
+			width: 65%;
+		}
 
 		.carousel-img {
 			width: 375px;
@@ -742,6 +746,10 @@
 
 	@media screen and (max-width: 375px) {
 
+		.header-logo {
+			width: 65%;
+		}
+
 		.carousel-img {
 			width: 375px;
 			height: 320px;;
@@ -816,8 +824,8 @@
 		}
 
 		.fasdeco-video iframe{
-			width: 370px;
-			height: 220px;
+			width: 320px;
+			height: 180px;
 		}
 
 		.get-sale-box {

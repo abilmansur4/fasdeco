@@ -40,7 +40,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark static-top navbar-moy">
             <div class="container">
               <a class="navbar-brand" href="#">
-                    <img class="header-logo" src="img/logo-black.jpg" alt="">
+                    <img class="header-logo" src="img/logo-black.png" alt="">
                 </a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -105,142 +105,84 @@
                     <div class="modal-header">
                       <h5 class="modal-title" id="exampleModalLabel">Форма для заполнения</h5>
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                        <span style="color: rgba(255, 220, 0, 1);" aria-hidden="true">&times;</span>
                       </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body custom-modal">
                         <form>
-                            <div class="form-group">
-                              <label for="fio">ФИО</label>
-                              <input type="text" class="form-control" id="fioInput" aria-describedby="">
-                            </div>
-                            <div class="form-group">
-                                <label for="wallType">Стена здания/дома</label>
-                                <input type="text" class="form-control" id="wallTypeInput" aria-describedby="">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group custom-form">
+                                            <label class="custom-form-label" for="clientName">ФИО</label>
+                                            <input type="text" id="clientName" aria-describedby="">
+                                          </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group custom-form">
+                                            <label class="custom-form-label" for="clientNumber">Телефон</label>
+                                            <input type="number" id="clientNumber" aria-describedby="">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="form-group" style="display: flex; flex-direction: row;">
-                                <label>Утепление</label>
+                                <label class="custom-form-label">Утепление</label>
                                 <div class="form-check ch">
-                                    <input class="form-check-input" type="radio" name="uteplenie" id="exampleRadios1" value="option1">
-                                    <label class="form-check-label" for="uteplenie">
-                                      Да
+                                    <label class="custom-form-label" for="uteplenieYes">
+                                     Да
+                                      <input class="form-check-input inpu" type="radio" name="uteplenie" id="uteplenieYes" value="нужно">
+                                      <span class="checkmark"></span>
                                     </label>
                                 </div>
                                 <div class="form-check ch">
-                                    <input class="form-check-input" type="radio" name="uteplenie" id="exampleRadios2" value="option2">
-                                    <label class="form-check-label" for="uteplenie">
+                                    <label class="custom-form-label" for="uteplenieNo">
                                       Нет
+                                        <input class="form-check-input inpu" type="radio" name="uteplenie" id="uteplenieNo" value="не нужно">
+                                      <span class="checkmark"></span>
                                     </label>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <label for="wallHeight">Высота здания/дома</label>
-                                            <input type="text" class="form-control" id="wallTypeInput" aria-describedby="">
-                                            <label for="wallLength">Длина здания/дома</label>
-                                            <input type="text" class="form-control" id="wallTypeInput" aria-describedby="">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="wallWidth">Ширина здания/дома</label>
-                                            <input type="text" class="form-control" id="wallTypeInput" aria-describedby="">
-                                            <label for="kvadratura">Квадратура здания/дома</label>
-                                            <input type="text" class="form-control" id="wallTypeInput" aria-describedby="">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group custom-form">
+                                            <label class="custom-form-label" for="kvadratura">Общ. квадратура</label>
+                                            <input type="number" id="kvadratura" aria-describedby="">
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="kvadratura">Этажность здания/дома</label>
-                                <input type="text" class="form-control" id="wallTypeInput" aria-describedby="">
-                            </div>
-                            <div class="form-group">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <label for="wallHeight">Количество окон</label>
-                                            <input type="text" class="form-control" id="wallTypeInput" aria-describedby="">
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label for="wallWidth">Высота окон</label>
-                                            <input type="text" class="form-control" id="wallTypeInput" aria-describedby="">
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label for="wallWidth">Ширина окон</label>
-                                            <input type="text" class="form-control" id="wallTypeInput" aria-describedby="">
+                                    <div class="col-md-6">
+                                        <div class="form-group custom-form">
+                                            <label class="custom-form-label" for="etajnost">Сколько этажей</label>
+                                            <input type="number" id="etajnost" aria-describedby="">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group" style="display: flex; flex-direction: row;">
-                                <label>Вид фасада</label>
+                                <label class="custom-form-label">Вид фасада</label>
                                 <div class="form-check ch">
-                                    <input class="form-check-input" type="radio" name="fasad" id="termopanel" value="Термопанель">
-                                    <label class="form-check-label" for="termopanel">
+                                    <label class="custom-form-label" for="termopanel">
                                       Термопанель
+                                    <input class="form-check-input inpu" type="radio" name="fasad" id="termopanel" value="Термопанель">
+                                    <span class="checkmark"></span>
                                     </label>
                                 </div>
                                 <div class="form-check ch">
-                                    <input class="form-check-input" type="radio" name="fasad" id="travertin" value="Жидкий травертин">
-                                    <label class="form-check-label" for="travertin">
+                                    <label class="custom-form-label" for="travertin">
                                       Жидкий травертин
+                                    <input class="form-check-input inpu" type="radio" name="fasad" id="travertin" value="Жидкий травертин">
+                                    <span class="checkmark"></span>
                                     </label>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <label for="wallHeight">Количество дверей</label>
-                                            <input type="text" class="form-control" id="wallTypeInput" aria-describedby="">
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label for="wallWidth">Высота дверей</label>
-                                            <input type="text" class="form-control" id="wallTypeInput" aria-describedby="">
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label for="wallWidth">Ширина дверей</label>
-                                            <input type="text" class="form-control" id="wallTypeInput" aria-describedby="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group" style="display: flex; flex-direction: row;">
-                                <div class="form-check ch">
-                                    <input class="form-check-input" type="radio" name="karniz" id="withKarniz" value="option5">
-                                    <label class="form-check-label" for="withKarniz">
-                                      С карнизом
-                                    </label>
-                                </div>
-                                <div class="form-check ch">
-                                    <input class="form-check-input" type="radio" name="karniz" id="noKarniz" value="option6">
-                                    <label class="form-check-label" for="noKarniz">
-                                      Без карниза
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="form-group" style="display: flex; flex-direction: row;">
-                                <div class="form-check ch">
-                                    <input class="form-check-input" type="radio" name="pilyastra" id="withPilyastra" value="option7">
-                                    <label class="form-check-label" for="withPilyastra">
-                                      С пилястрой
-                                    </label>
-                                </div>
-                                <div class="form-check ch">
-                                    <input class="form-check-input" type="radio" name="pilyastra" id="noPilyastra" value="option8">
-                                    <label class="form-check-label" for="noPilyastra">
-                                      Без пилястры
-                                    </label>
-                                </div>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Отправить</button>
+                            <button type="button" class="btn btn-primary sendButton" style="float: right;" onclick="validateForm()">Отправить</button>
                           </form>
                     </div>
-                    <div class="modal-footer">
+                    <!-- <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-                      <!-- <button type="button" class="btn btn-primary">Отправить</button> -->
-                    </div>
+                      <button type="button" class="btn btn-primary">Отправить</button>
+                    </div> -->
                   </div>
                 </div>
               </div>
@@ -329,60 +271,30 @@
             </div>
         </div>
     </section>
-    <section id="youtube" class="features section-padding" id="features">
+    <section id="youtube" class="features" id="features">
         <div class="container">
-                    <div class="fasdeco-video">
-                        <div class="main-gallery">
-                            <div class="gallery-cell">
-                                <iframe width="520" height="380" src="https://www.youtube.com/embed/-dg0f2VV46M?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                            <div class="gallery-cell">
-                                <iframe width="520" height="380" src="https://www.youtube.com/embed/EQeoy2WQDQo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                            <div class="gallery-cell">
-                                <iframe width="520" height="380" src="https://www.youtube.com/embed/OxvIY3S5JWY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                          </div>
+            <div class="fasdeco-video">
+                <h3>ВИДЕОБЛОГ</h3>
+                <div class="main-gallery">
+                    <div class="gallery-cell">
+                        <iframe width="640" height="480" src="https://www.youtube.com/embed/-dg0f2VV46M?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-               
-        </div>
-        <!-- <div class="responsive-feature-img"><img src="img/devices.png" alt="responsive devices"></div> -->
-    </section>
-    <!-- <section id="beforeafter">
-        <div class="container">
-            <div class="beforeafter-gallery">
-                <div class="gallery-cell-full">
-                    <img class="before-after-img" src="img/facade1_before.jpg">
-                    <div class="centered">До</div>
+                    <div class="gallery-cell">
+                        <iframe width="640" height="480" src="https://www.youtube.com/embed/EQeoy2WQDQo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="gallery-cell">
+                        <iframe width="640" height="480" src="https://www.youtube.com/embed/OxvIY3S5JWY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </div>
-                <div class="gallery-cell-full">
-                    <img class="before-after-img" src="img/facade1_after.jpg">
-                    <div class="centered">После</div>
-                </div>
-                <div class="gallery-cell-full">
-                    <img class="before-after-img" src="img/facade2_before.jpeg">
-                    <div class="centered">До</div>
-                </div>
-                <div class="gallery-cell-full">
-                    <img class="before-after-img" src="img/facade2_after.jpeg">
-                    <div class="centered">После</div>
+                <div class="subscribe-button">
+                    <svg height="512pt" viewBox="0 -77 512.00213 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m501.453125 56.09375c-5.902344-21.933594-23.195313-39.222656-45.125-45.128906-40.066406-10.964844-200.332031-10.964844-200.332031-10.964844s-160.261719 0-200.328125 10.546875c-21.507813 5.902344-39.222657 23.617187-45.125 45.546875-10.542969 40.0625-10.542969 123.148438-10.542969 123.148438s0 83.503906 10.542969 123.148437c5.90625 21.929687 23.195312 39.222656 45.128906 45.128906 40.484375 10.964844 200.328125 10.964844 200.328125 10.964844s160.261719 0 200.328125-10.546875c21.933594-5.902344 39.222656-23.195312 45.128906-45.125 10.542969-40.066406 10.542969-123.148438 10.542969-123.148438s.421875-83.507812-10.546875-123.570312zm0 0" fill="#f00"/><path d="m204.96875 256 133.269531-76.757812-133.269531-76.757813zm0 0" fill="#fff"/></svg>
+                    <h3 style="margin-top: 5px;">ПОДПИСАТЬСЯ</h3>
                 </div>
             </div>
         </div>
-    </section> -->
-    <section id="get-sale" class="features-extra section-padding" id="assets">
+    </section>
+    <!-- <section id="get-sale" class="features-extra section-padding" id="assets">
         <div class="container">
-            <!-- <div class="row">
-                <div class="col-md-5">
-                    <div class="feature-list">
-                        <h3>Designed with Sketch!</h3>
-                        <p>Easily change/switch/swap every placeholder inside every image on Sedna with the included Sketch files. You’ll have this template customised to suit your business in no time! </p>
-                        <p>Nam vehicula malesuada lectus, interdum fringilla nibh. Duis aliquam vitae metus a pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum augue quis augue ornare, eget faucibus felis pharetra. Proin condimentum et leo quis fringilla.
-                        </p>
-                        <a href="#" class="btn btn-ghost btn-accent btn-small">What's Sketch?</a>
-                    </div>
-                </div>
-            </div> -->
             <div class="get-sale-box">
                 <div class="row">
                     <div class="col-md-4">
@@ -409,94 +321,7 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="macbook-wrap wp3"></div>
-        <div class="responsive-feature-img"><img src="img/macbook-pro.png" alt="responsive devices"></div> -->
-    </section>
-    
-    <!-- <section id="sliders2">
-        <div class="container">
-            <div class="main-gallery3">
-                <div class="gallery-cell-full">
-                    <div class="row">
-                        <div class="col-md-5">
-                            <img src="img/slider-img-1.jpg" class="carousel-item-img" alt="..."> 
-                        </div>
-                        <div class="col-md-7">
-                            <div class="carousel-item-content">
-                                <h3>Бюджет: 200 000 руб</h3>
-                                <form action="#" class="i-want-form">
-                                <div class="i-want-form-set">
-                                    <input type="text" id="fname" name="fname" placeholder="Введите имя"><br>
-                                </div>
-                                <div class="lname-set">
-                                    <input type="text" id="lname" name="lname" placeholder="Ваш телефон"><br><br>
-                                </div>
-                                <div class="i-want-button-set">
-                                    <input id="i-want-button" type="submit" value="Хочу также">
-                                </div>       
-                                </form>
-                                <div class="i-want-section-note">
-                                    <p style="font-size: 12px;">Нажимая кнопку хочу также, вы даёте своё согласие на обработку своих персональных данных</p>
-                                </div>
-                            </div>   
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-cell-full">
-                    <div class="row">
-                        <div class="col-md-5">
-                            <img src="img/slider-img-2.jpg" class="carousel-item-img" alt="...">
-                        </div>
-                        <div class="col-md-7">
-                            <div class="carousel-item-content">
-                                <h3>Бюджет: 400 000 руб</h3>
-                                <form action="#" class="i-want-form">
-                                <div class="i-want-form-set">
-                                    <input type="text" id="fname" name="fname" placeholder="Введите имя"><br>
-                                </div>
-                                <div class="lname-set">
-                                    <input type="text" id="lname" name="lname" placeholder="Ваш телефон"><br><br>
-                                </div>
-                                <div class="i-want-button-set">
-                                    <input id="i-want-button" type="submit" value="Хочу также">
-                                </div>       
-                                </form>
-                                <div class="i-want-section-note">
-                                    <p style="font-size: 12px;">Нажимая кнопку хочу также, вы даёте своё согласие на обработку своих персональных данных</p>
-                                </div>
-                            </div> 
-                          </div>
-                      </div>
-                </div>
-                <div class="gallery-cell-full">
-                    <div class="crsl row">
-                        <div class="col-md-5">
-                          <img src="img/slider-img-3.jpg" class="carousel-item-img" alt="...">
-                        </div>
-                        <div class="col-md-7">
-                          <div class="carousel-item-content">
-                              <h3>Бюджет: 400 000 руб</h3>
-                              <form action="#" class="i-want-form">
-                              <div class="i-want-form-set">
-                                  <input type="text" id="fname" name="fname" placeholder="Введите имя"><br>
-                              </div>
-                              <div class="lname-set">
-                                  <input type="text" id="lname" name="lname" placeholder="Ваш телефон"><br><br>
-                              </div>
-                              <div class="i-want-button-set">
-                                  <input id="i-want-button" type="submit" value="Хочу также">
-                              </div>       
-                              </form>
-                              <div class="i-want-section-note">
-                                  <p style="font-size: 12px;">Нажимая кнопку хочу также, вы даёте своё согласие на обработку своих персональных данных</p>
-                              </div>
-                          </div> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
+    </section>     -->
     <section id="gallery">
         <div class="container">
             <div class="carousel carousel-main" data-flickity>
@@ -532,128 +357,39 @@
                 </div>
             </div>
             <div class="carousel carousel-nav" data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false }'>
-                <div class="carousel-cell">
+                <div class="carousel-cell baran">
                     <img class="carousel-nav-img" src="img/gallery/1.jpg">
                 </div>
-                <div class="carousel-cell">
+                <div class="carousel-cell baran">
                     <img class="carousel-nav-img" src="img/gallery/2.jpg">
                 </div>
-                <div class="carousel-cell">
+                <div class="carousel-cell baran">
                     <img class="carousel-nav-img" src="img/gallery/3.jpg">
                 </div>
-                <div class="carousel-cell">
+                <div class="carousel-cell baran">
                     <img class="carousel-nav-img" src="img/gallery/4.jpg">
                 </div>
-                <div class="carousel-cell">
+                <div class="carousel-cell baran">
                     <img class="carousel-nav-img" src="img/gallery/5.jpg">
                 </div>
-                <div class="carousel-cell">
+                <div class="carousel-cell baran">
                     <img class="carousel-nav-img" src="img/gallery/6.jpg">
                 </div>
-                <div class="carousel-cell">
+                <div class="carousel-cell baran">
                     <img class="carousel-nav-img" src="img/gallery/7.jpg">
                 </div>
-                <div class="carousel-cell">
+                <div class="carousel-cell baran">
                     <img class="carousel-nav-img" src="img/gallery/8.jpg">
                 </div>
-                <div class="carousel-cell">
+                <div class="carousel-cell baran">
                     <img class="carousel-nav-img" src="img/gallery/9.jpg">
                 </div>
-                <div class="carousel-cell">
+                <div class="carousel-cell baran">
                     <img class="carousel-nav-img" src="img/gallery/10.jpg">
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- <section id="i-want-section" class="i-want-section">
-        <div class="container">
-            <div class="main-gallery2">
-                <div class="gallery-cell">
-                    <div class="card" style="width: 100%; margin-bottom: 30px;">
-                        <img src="img/slider-img-1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h3 style="text-align: center">Бюджет: 200 000 руб</h3>
-                          <form action="#" class="i-want-form">
-                            <div class="i-want-form-set">
-                                <input type="text" id="fname" name="fname" placeholder="Введите имя"><br><br>
-                            </div>
-                            <div class="lname-set">
-                                <input type="text" id="lname" name="lname" placeholder="Ваш телефон"><br><br>
-                            </div>
-                            <div class="i-want-button-set">
-                                <input id="i-want-button" type="submit" value="Хочу также">
-                            </div>       
-                          </form>
-                          <p style="font-size: 12px;">Нажимая кнопку хочу также, вы даёте своё согласие на обработку своих персональных данных</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-cell">
-                    <div class="card" style="width: 100%; margin-bottom: 30px;">
-                        <img src="img/slider-img-2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h3 style="text-align: center">Бюджет: 300 000 руб</h3>
-                          <form action="#" class="i-want-form">
-                            <div class="i-want-form-set">
-                                <input type="text" id="fname" name="fname" placeholder="Введите имя"><br><br>
-                            </div>
-                            <div class="lname-set">
-                                <input type="text" id="lname" name="lname" placeholder="Ваш телефон"><br><br>
-                            </div>
-                            <div class="i-want-button-set">
-                                <input id="i-want-button" type="submit" value="Хочу также">
-                            </div>       
-                          </form>
-                          <p style="font-size: 12px;">Нажимая кнопку хочу также, вы даёте своё согласие на обработку своих персональных данных</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-cell">
-                    <div class="card" style="width: 100%; margin-bottom: 30px;">
-                        <img src="img/slider-img-3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h3 style="text-align: center">Бюджет: 100 000 руб</h3>
-                          <form action="#" class="i-want-form">
-                            <div class="i-want-form-set">
-                                <input type="text" id="fname" name="fname" placeholder="Введите имя"><br><br>
-                            </div>
-                            <div class="lname-set">
-                                <input type="text" id="lname" name="lname" placeholder="Ваш телефон"><br><br>
-                            </div>
-                            <div class="i-want-button-set">
-                                <input id="i-want-button" type="submit" value="Хочу также">
-                            </div>       
-                          </form>
-                          <p style="font-size: 12px;">Нажимая кнопку хочу также, вы даёте своё согласие на обработку своих персональных данных</p>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            
-        </div>
-    </section> -->
-
-    <!-- <section class="blog-intro section-padding" id="blog">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>Showcase your smashing product with Sedna</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
-                    <h5>EXCLUSIVE TO CODROPS</h5>
-                    <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-                <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
-                    <h5>SPREADING PIXELS AROUND THE WORLD</h5>
-                    <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <section id="about" class="about">
          <div class="container">
@@ -666,17 +402,6 @@
                         <p>+7 707 535 97 97</p>
                         <h3>Режим работы</h3>
                         <p>Ежедневно с 09:00 до 18:00</p>
-                        <!-- <div class="social-media">
-                            <a href="https://www.instagram.com/fasdeco.kz">
-                                <img class="social-media-svg" src="img/instagram.svg">
-                            </a>
-                            <a href="https://www.facebook.com/fasdeco.kz">
-                                <img class="social-media-svg" src="img/facebook.svg">
-                            </a>
-                            <a href="https://api.whatsapp.com/send?phone=77075359797">
-                                <img class="social-media-svg" src="img/wht.svg">
-                            </a>
-                        </div> -->
                     </div>
                 </div>
                 <div class="col-md-8 karta">
@@ -723,14 +448,9 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-    <!-- <script src="bower_components/retina.js/dist/retina.js"></script> -->
     <script src="js/jquery.fancybox.pack.js"></script>
-    <!-- <script src="js/vendor/bootstrap.min.js"></script> -->
     <script src="js/scripts.js"></script>
     <script src="js/jquery.flexslider-min.js"></script>
-    <!-- <script src="bower_components/classie/classie.js"></script> -->
-    <!-- <script src="bower_components/jquery-waypoints/lib/jquery.waypoints.min.js"></script> -->
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
     (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
     function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
@@ -745,59 +465,60 @@
         // cellAlign: 'left',
         contain: true,
         wrapAround: true,
-        
+        fullscreen: true
     });
 
-    // var flkty2 = new Flickity( '.main-gallery2', {
-    //     // options
-    //     cellAlign: 'left',
-    //     contain: true,
-    //     wrapAround: true,
-    //     pageDots: false
+    // var flkty2 = new Flickity('.carousel-nav', {
+    //     // pageDots: false,   
+    //     // prevNextButtons: false,
+    //     // draggable: false
     // });
 
-    // var flkty3 = new Flickity( '.main-gallery3', {
-    //     // options
-    //     cellAlign: 'left',
-    //     contain: true,
-    //     wrapAround: true,
-    //     pageDots: true,
-    //     autoPlay: true
-    // });
+    function validateForm() {
+        var clientName = document.getElementById('clientName').value;
+        var clientNumber = document.getElementById('clientNumber').value;
+        var uteplenie = "";
+        if (document.getElementById('uteplenieYes').checked) {
+            uteplenie = "нужно";
+        } else if (document.getElementById('uteplenieNo').checked){
+            uteplenie = "не нужно";
+        }
 
-    // $('.carousel-main').flickity();
-    // // 2nd carousel, navigation
-    // $('.carousel-nav').flickity({
-    // asNavFor: '.carousel-main',
-    // contain: true,
-    // pageDots: false
-    // });
+        var kvadratura = document.getElementById('kvadratura').value;
+        var etajnost = document.getElementById('etajnost').value;
+        var fasad = "";
+        if (document.getElementById('termopanel').checked) {
+            fasad = "термопанель";
+        } else if (document.getElementById('travertin').checked) {
+            fasad = "жидкий травертин";
+        }
 
-    // var flkty4 = new Flickity( '.beforeafter-gallery', {
-    //     // options
-    //     // cellAlign: 'left',
-    //     contain: true,
-    //     wrapAround: true,
-    //     pageDots: true,
-    //     // autoPlay: true
-    // });
+        if (clientName == "") { alert("Введите имя."); return false; };
+        if (clientNumber == "" ) { alert("Введите номер."); return false; };
+        if (uteplenie == "") {
+            alert("Выберите, нужно ли вам утепление.");
+            return false;
+        };
+        if (kvadratura == "") { alert("Введите общую квадратуру." ); return false;}
+        if (etajnost == "") { alert("Введите сколько этажей."); return false;}
+        if (fasad == "") {
+            alert("Выберите тип фасада.");
+            return false;
+        };
 
-    // window.onscroll = function() {myFunction()};
+        sendMessage(clientName, clientNumber, uteplenie, kvadratura, etajnost, fasad);
 
-// // Get the navbar
-// var navbar = document.getElementById("navbar");
+    };
 
-// // Get the offset position of the navbar
-// var sticky = navbar.offsetTop;
-
-// // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-// function myFunction() {
-//   if (window.pageYOffset >= sticky) {
-//     navbar.classList.add("sticky")
-//   } else {
-//     navbar.classList.remove("sticky");
-//   }
-// }
+    function sendMessage(clientName, clientNumber, uteplenie, kvadratura, etajnost, fasad) {
+        window.open("https://api.whatsapp.com/send?phone=77009653295&text=" + 
+                    "Имя клиента: " + clientName + "%0a" + 
+                    "Номер: " + clientNumber + "%0a" + 
+                    "Утепление " + uteplenie + "%0a" +
+                    "Общая квадратура: " + kvadratura + "%0a" +
+                    "Сколько этажей: " + etajnost + "%0a" +
+                    "Вид фасада: " + fasad);
+    };
 
     </script>
 </body>
