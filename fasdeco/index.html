@@ -51,17 +51,17 @@
                     <a class="nav-link" href="index.html#intro">Преимущества</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="index.html#youtube">О нас</a>
+                    <a class="nav-link" href="index.html#youtube">Видеоблог</a>
                   </li>
                   <!-- <li class="nav-item">
                     <a class="nav-link" href="index.html#get-sale">Скидки</a>
                   </li> -->
                   <li class="nav-item">
-                    <a class="nav-link" href="index.html#sliders2" id="catalog">Галерея</a>
+                    <a class="nav-link" href="index.html#gallery" id="catalog">Галерея</a>
                   </li>
-                  <li class="nav-item">
+                  <!-- <li class="nav-item">
                     <a class="nav-link" href="index.html#i-want-section" id="catalog-mobile">Каталог</a>
-                  </li>
+                  </li> -->
                   <li class="nav-item">
                     <a class="nav-link" href="index.html#about">Контакты</a>
                   </li>
@@ -151,22 +151,28 @@
                             </div>
                             <div class="form-group" style="display: flex; flex-direction: row;">
                                 <label class="custom-form-label">Вид фасада</label>
-                                <div class="form-check ch">
-                                    <label class="custom-form-label" for="termopanel">
-                                      Термопанель
-                                    <input class="form-check-input inpu" type="radio" name="fasad" id="termopanel" value="Термопанель">
-                                    <span class="checkmark"></span>
-                                    </label>
+                                <div class="facade-type">
+                                    <div class="form-check ch facade-type-check">
+                                        <label class="custom-form-label" for="termopanel">
+                                          Термопанель
+                                        <input class="form-check-input inpu" type="radio" name="fasad" id="termopanel" value="Термопанель">
+                                        <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check ch facade-type-check">
+                                        <label class="custom-form-label" for="travertin">
+                                          Жидкий травертин
+                                        <input class="form-check-input inpu" type="radio" name="fasad" id="travertin" value="Жидкий травертин">
+                                        <span class="checkmark"></span>
+                                        </label>
+                                    </div>
                                 </div>
-                                <div class="form-check ch">
-                                    <label class="custom-form-label" for="travertin">
-                                      Жидкий травертин
-                                    <input class="form-check-input inpu" type="radio" name="fasad" id="travertin" value="Жидкий травертин">
-                                    <span class="checkmark"></span>
-                                    </label>
-                                </div>
+                                
                             </div>
-                            <button type="button" class="btn btn-primary sendButton" style="float: right;" onclick="validateForm()">Отправить</button>
+                            <div class="submit-b">
+                                <button type="button" class="btn btn-primary sendButton" onclick="validateForm()">Отправить</button>
+                            </div>
+                            
                           </form>
                     </div>
                     <!-- <div class="modal-footer">
@@ -267,13 +273,13 @@
                 <h3>ВИДЕОБЛОГ</h3>
                 <div class="main-gallery">
                     <div class="gallery-cell">
-                        <iframe width="640" height="480" src="https://www.youtube.com/embed/-dg0f2VV46M?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="800" height="480" src="https://www.youtube.com/embed/-dg0f2VV46M?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="gallery-cell">
-                        <iframe width="640" height="480" src="https://www.youtube.com/embed/EQeoy2WQDQo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="800" height="480" src="https://www.youtube.com/embed/EQeoy2WQDQo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="gallery-cell">
-                        <iframe width="640" height="480" src="https://www.youtube.com/embed/OxvIY3S5JWY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="800" height="480" src="https://www.youtube.com/embed/OxvIY3S5JWY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
                 <div class="subscribe-button">

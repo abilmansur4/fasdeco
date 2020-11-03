@@ -529,9 +529,9 @@
 
 	@media screen and (max-width:640px) {
 
-		#catalog {
+		/* #catalog {
 			display: none;
-		}
+		} */
 
 		footer ul.footer-group {
 			border-top: none;
@@ -616,6 +616,22 @@
 	}
 
 	@media screen and (max-width: 414px) {
+
+		.custom-modal {
+			padding-left: 0;
+			padding-right: 0;
+			padding-bottom: 0;
+			padding-top: 30px;
+		}
+
+		.custom-form {
+			width: 85%;
+		}
+
+		.facade-type {
+			display: flex;
+			flex-direction: column;
+		}
 
 		.subscribe-button {
 			margin-top: 40px;
@@ -766,6 +782,28 @@
 	}
 
 	@media screen and (max-width: 375px) {
+
+		.custom-modal {
+			padding-left: 0;
+			padding-right: 0;
+			padding-bottom: 0;
+			padding-top: 30px;
+		}
+
+		.custom-form {
+			width: 85%;
+		}
+
+		.facade-type {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.sendButton {
+			width: 60% !important;
+			/* margin-left: 0;
+			margin-right: 0; */
+		}
 
 		.fasdeco-video h3 {
 			font-size: 24px;
@@ -987,6 +1025,22 @@
 	}
 
 	@media screen and (max-width: 320px) {
+
+		.custom-modal {
+			padding-left: 0;
+			padding-right: 0;
+			padding-bottom: 0;
+			padding-top: 30px;
+		}
+
+		.custom-form {
+			width: 85%;
+		}
+
+		.facade-type {
+			display: flex;
+			flex-direction: column;
+		}
 
 		.fasdeco-video h3 {
 			font-size: 20px;

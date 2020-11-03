@@ -887,7 +887,7 @@ you can use the generic selector below, but it's slower:
     font-weight: 600;
     font-size: 26px;
 }
-  }
+  
 
   .about {
     margin-top: 30px;
@@ -1263,4 +1263,15 @@ you can use the generic selector below, but it's slower:
   height: 60px; 
   background-color: #fbd84a; 
   border-radius: 100%;
+}
+
+.submit-b {
+  /* float: right; */
+  text-align: center;
+  width: 100%;
+}
+
+.facade-type {
+  display: flex;
+  flex-direction: row;
 }
