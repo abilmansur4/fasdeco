@@ -9,6 +9,12 @@
 
 }
 
+@media screen and (max-width: 700px) {
+	.carousel-nav {
+		display: none;
+	}
+}
+
 @media screen and (max-width:1200px) {
 	header {
 		width: 95%;
@@ -611,6 +617,21 @@
 
 	@media screen and (max-width: 414px) {
 
+		.subscribe-button {
+			margin-top: 40px;
+		}
+
+		.outercircle {
+			width: 40px;
+			height: 40px;
+			bottom: 40px;
+		}
+
+		#topcontrol {
+			width: 50px;
+			height: 50px;
+		}
+
 		.header-logo {
 			width: 65%;
 		}
@@ -745,6 +766,34 @@
 	}
 
 	@media screen and (max-width: 375px) {
+
+		.fasdeco-video h3 {
+			font-size: 24px;
+		}
+
+		.subscribe-button {
+			margin-top: 40px;
+		}
+
+		.subscribe-button svg {
+			width: 30px;
+			height: 30px;
+		}
+
+		.subscribe-button a {
+			font-size: 24px;
+		}
+
+		.outercircle {
+			width: 40px;
+			height: 40px;
+			bottom: 40px;
+		}
+
+		#topcontrol {
+			width: 50px;
+			height: 50px;
+		}
 
 		.header-logo {
 			width: 65%;
@@ -938,6 +987,33 @@
 	}
 
 	@media screen and (max-width: 320px) {
+
+		.fasdeco-video h3 {
+			font-size: 20px;
+		}
+
+		.subscribe-button {
+			margin-top: 12%;
+		}
+
+		.subscribe-button svg {
+			width: 30px;
+			height: 30px;
+		}
+
+		.subscribe-button a {
+			font-size: 20px;
+		}
+
+		.carousel-img {
+			width: 320px;
+    		height: 280px;
+		}
+
+		.carousel-nav-img {
+			width: 30%;
+			height: 30%;
+		}
 
 		.navbar-brand {
 			width: 70%;
