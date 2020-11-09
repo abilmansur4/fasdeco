@@ -203,7 +203,7 @@ Hero
 .hero {
   min-height: 100vh;
   /* background: linear-gradient(to right, rgb(255, 230, 0), rgba(255, 230, 0, 0.226)), url("../img/fasdeco-bg.jpeg") center center; */
-  background: linear-gradient(90deg, rgba(255,220,0,1) 14%, rgba(255,220,0,0.8813900560224089) 43%, rgba(255,220,0,0.06066176470588236) 100%), url("../img/fasdeco-bg.jpeg");
+  background: linear-gradient(90deg, rgb(200,175,58) 14%, rgb(200,175,58) 43%, rgba(255,220,0,0.06066176470588236) 100%), url("../img/fasdeco-bg.jpeg");
   background-position: right;
   background-size: cover;
   position: relative; 
