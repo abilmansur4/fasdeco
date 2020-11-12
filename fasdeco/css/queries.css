@@ -7,6 +7,7 @@
 		display: none;
 	}
 
+
 }
 
 @media screen and (max-width: 700px) {
@@ -15,7 +16,19 @@
 	}
 }
 
+@media screen and (min-width: 1440px) {
+	.fasdeco-card {
+		/* width: 50%; */
+	}
+}
+
 @media screen and (max-width:1200px) {
+
+
+	/* .fasdeco-card {
+		width: 60%;
+	} */
+
 	header {
 		width: 95%;
 		margin: 0 auto;

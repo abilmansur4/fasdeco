@@ -121,6 +121,7 @@ a:hover, a:focus {
   text-decoration: none; }
 
 body {
+  width: 100%;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   color: rgba(28, 54, 83, 0.6);
@@ -1277,7 +1278,7 @@ you can use the generic selector below, but it's slower:
 }
 
 
-.cartochka {
+.card {
   display: inline-block;
   box-shadow: 0 1px 2px 0 rgba(0,0,0,.15);
   margin: 20px;
@@ -1286,13 +1287,13 @@ you can use the generic selector below, but it's slower:
   transition: all .2s ease-in-out;
 }
 
-.cartochka:hover {
+.card:hover {
   /*box-shadow: 0 5px 22px 0 rgba(0,0,0,.25);*/
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   margin-bottom: 54px;
 }
 
-.cartochka-image {
+.image {
   height: 200px;
   background-size: contain;
   opacity: .8;
@@ -1300,8 +1301,8 @@ you can use the generic selector below, but it's slower:
   transition: all .2s ease-in-out;
 }
 
-.cartochka-image:hover,
-.cartochka:hover .cartochka-image {
+.image:hover,
+.card:hover .image {
   opacity: 1;
 }
 
@@ -1325,4 +1326,20 @@ you can use the generic selector below, but it's slower:
 
 .fasdeco-card {
   text-align: center;
+}
+
+.card-body p{
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 2px;
+  line-height: 10px;
+}
+
+.card-body {
+  line-height: 2px;
+  height: 160px;
+}
+
+.card-body h3 {
+  font-size: 20px;
 }
