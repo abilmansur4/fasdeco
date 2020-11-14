@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>index</title>
+    <title>Fasdeco</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -49,6 +50,9 @@
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="index.html#intro">Преимущества</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#price-list">Товары</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="index.html#youtube">Видеоблог</a>
@@ -268,57 +272,104 @@
         </div>
     </section>
     <section id="price-list">
+        <div class="intro-title">
+            <h2>Наши товары</h2>
+        </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-sm-4">
-                    <div class="card fasdeco-card">
+                <div class="col-md-4 col-sm-4 tovar">
+                    <div class="fasdeco-card">
                         <img class="card-img-top" src="img/termopanel.jpeg" alt="Card image cap">
                         <div class="card-body">
                             <h3>Термопанель</h3>
-                            <p>Тройка <b>2500 тг.</b></p>
+                            <p><b>3200 тг</b></p>
                         </div>
-                      </div>
-                </div>
-                <div class="col-md-3 col-sm-4">
-                    <div class="card fasdeco-card">
-                        <img class="card-img-top" src="img/termopanel.jpeg" alt="Card image cap">
-                        <div class="card-body">
-                            <h3>Термопанель</h3>
-                            <p>Пятерка <b>3500 тг.</b></p>
-                        </div>
-                      </div>
-                </div>  
-                <div class="col-md-3 col-sm-4">
-                    <div class="card fasdeco-card">
-                        <img class="card-img-top" src="img/termopanel.jpeg" alt="Card image cap">
-                        <div class="card-body">
-                            <h3>Оконное обрамление</h3>
-                            <p>Бюджет <b>2500 тг.</b></p>
-                            <p>+ Камень <b>4000 тг.</b></p>
-                        </div>
+                        <button class="btn btn-dark order-btn" data-toggle="modal" data-target="#tovarModal">Заказать</button>
                       </div>
                 </div> 
-                <div class="col-md-3 col-sm-4">
-                    <div class="card fasdeco-card">
+                <div class="col-md-4 col-sm-4 tovar">
+                    <div class="fasdeco-card">
                         <img class="card-img-top" src="img/termopanel.jpeg" alt="Card image cap">
                         <div class="card-body">
                             <h3>Оконное обрамление</h3>
-                            <p>Стандарт <b>2500 тг.</b></p>
-                            <p>+ Камень <b>4000 тг.</b></p>
+                            <p><b>3200 тг</b></p>
                         </div>
+                        <button class="btn btn-dark order-btn" data-toggle="modal" data-target="#tovarModal">Заказать</button>
+                      </div>
+                </div> 
+                <div class="col-md-4 col-sm-4 tovar">
+                    <div class="fasdeco-card">
+                        <img class="card-img-top" src="img/termopanel.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h3>Угловой декор</h3>
+                            <p><b>3200 тг</b></p>
+                        </div>
+                        <button class="btn btn-dark order-btn" data-toggle="modal" data-target="#tovarModal">Заказать</button>
                       </div>
                 </div>
-                <!-- <div class="col-md-6">
-                    <div class="card fasdeco-card">
+                <div class="col-md-4 col-sm-4 tovar">
+                    <div class="fasdeco-card">
                         <img class="card-img-top" src="img/termopanel.jpeg" alt="Card image cap">
                         <div class="card-body">
-                            <h3>Оконное обрамление</h3>
-                            <p class="card-text">Стандарт 2500 тг.</p>
-                            <p class="card-text">+ Камень 4000 тг.</p>
+                            <h3>Карниз</h3>
+                            <p><b>3200 тг</b></p>
                         </div>
+                        <button class="btn btn-dark order-btn" data-toggle="modal" data-target="#tovarModal">Заказать</button>
                       </div>
-                </div> -->
+                </div>
+                <div class="col-md-4 col-sm-4 tovar">
+                    <div class="fasdeco-card">
+                        <img class="card-img-top" src="img/termopanel.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h3>Межэтажный пояс</h3>
+                            <p><b>3200 тг</b></p>
+                        </div>
+                        <button class="btn btn-dark order-btn" data-toggle="modal" data-target="#tovarModal">Заказать</button>
+                      </div>
+                </div>
             </div>
+            <div class="modal fade" id="tovarModal" tabindex="-1" aria-labelledby="tovarModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Форма для заполнения</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span style="color: rgba(255, 220, 0, 1);" aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body custom-modal">
+                        <form>
+                            <div class="container">
+                                <div class="form-group custom-form">
+                                    <label class="custom-form-label" for="name">ФИО</label>
+                                    <input type="text" id="name" aria-describedby="">
+                                </div>
+                                <div class="form-group custom-form">
+                                    <label class="custom-form-label" for="number">Телефон</label>
+                                    <input type="number" id="number" aria-describedby="">
+                                </div>     
+                                <div style="text-align: center; margin-bottom: 20px;">
+                                    <select id="productSelect">
+                                      <option value="термопанель">Термопанель</option>
+                                      <option value="оконное обрамление">Оконное обрамление</option>
+                                      <option value="угловой декор">Угловой декор</option>
+                                      <option value="карниз">Карниз</option>
+                                      <option value="межэтажный пояс">Межэтажный пояс</option>
+                                    </select>
+                                  </div>     
+                            </div>
+                            <div class="submit-b">
+                                <button type="button" class="btn btn-primary sendButton" onclick="validateOrder()">Отправить</button>
+                            </div>
+                          </form>
+                    </div>
+                    <!-- <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                      <button type="button" class="btn btn-primary">Отправить</button>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
           </div>
     </section>
     <section id="youtube" class="features" id="features">
@@ -501,7 +552,6 @@
     <script src="js/scripts.js"></script>
     <script>
 
-
     var flkty1 = new Flickity( '.main-gallery', {
         // options
         // cellAlign: 'left',
@@ -565,6 +615,22 @@
                     "Сколько этажей: " + etajnost + "%0a" +
                     "Вид фасада: " + fasad);
     };
+
+    function validateOrder() {
+        var name = document.getElementById('name').value;
+        var number = document.getElementById('number').value;
+        var product = $("#productSelect :selected").val();
+        if (name == "" || name == null) { alert("Введите имя."); return false; };
+        if (number == "" ) { alert("Введите номер."); return false; };
+        sendOrder(name, number, product);
+    }
+
+    function sendOrder(name, number, product) {
+        window.open("https://api.whatsapp.com/send?phone=77009653295&text=" + 
+                    "Здравсвтуйте, я хотел(-а) бы заказать " + product + "." + "%0a" +
+                    "ФИО: " + name + "%0a" +
+                    "Телефон: " + number);
+    }
 
     </script>
 </body>

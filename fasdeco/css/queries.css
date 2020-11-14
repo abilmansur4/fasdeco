@@ -7,12 +7,21 @@
 		display: none;
 	}
 
+}
 
+@media screen and (max-width: 578px) {
+	#productSelect {
+		margin-top: 14px;
+	}
 }
 
 @media screen and (max-width: 700px) {
 	.carousel-nav {
 		display: none;
+	}
+
+	.btn-margin-right, .btn-accent {
+		float: none;
 	}
 }
 
@@ -67,6 +76,14 @@
 }
 
 @media screen and (max-width:1024px) {
+
+	.card-body h3 {
+		font-size: 20px;
+	}
+
+	.card-body p {
+		line-height: 20px;
+	}
 
 	.carousel-cell {
 		width: 108%;
@@ -413,10 +430,12 @@
 	}
 
 	@media screen and (max-width: 768px) {
+
 		/* .fasdeco-video iframe {
 			width: 700px;
 			height: 420px;
 		} */
+
 		.carousel-cell {
 			width: 108%;
 			height: 60vh;
@@ -629,6 +648,10 @@
 	}
 
 	@media screen and (max-width: 414px) {
+
+		.sendButton {
+			margin-bottom: 20px;
+		}
 
 		.custom-modal {
 			padding-left: 0;
