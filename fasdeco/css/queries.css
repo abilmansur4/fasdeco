@@ -25,10 +25,16 @@
 	}
 }
 
-@media screen and (min-width: 1440px) {
-	.fasdeco-card {
-		/* width: 50%; */
+@media screen and (min-width: 1220px) {
+	.fasdeco-card p{
+		font-size: 18px;
 	}
+
+	.fasdeco-card h3 {
+		font-size: 18px;
+	}
+
+
 }
 
 @media screen and (max-width:1200px) {
@@ -649,6 +655,17 @@
 
 	@media screen and (max-width: 414px) {
 
+		.card-price p{
+			font-size: 18px;
+			font-weight: 300;
+			/* padding-bottom: 2px; */
+			/* line-height: 10px; */
+		  }
+		  
+		  .card-body h3 {
+			font-size: 20px;
+		  }
+
 		.sendButton {
 			margin-bottom: 20px;
 		}
@@ -1061,6 +1078,32 @@
 	}
 
 	@media screen and (max-width: 320px) {
+
+		.card-price p{
+			font-size: 16px;
+			font-weight: 300;
+			/* padding-bottom: 2px; */
+			/* line-height: 10px; */
+		  }
+		  
+		  .card-body h3 {
+			font-size: 16px;
+		  }
+
+		  .card-body {
+			  height: 40px;
+		  }
+
+		  .card-price {
+			  height: 32px;
+		  }
+
+		  .order-btn {
+			  width: 120px;
+			  font-size: 12px;
+			  margin-bottom: 8px;
+			  padding: 6px 0 6px 0;
+		  }
 
 		.custom-modal {
 			padding-left: 0;

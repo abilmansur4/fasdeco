@@ -1305,7 +1305,7 @@ you can use the generic selector below, but it's slower:
 
 .card-body {
   line-height: 2px;
-  height: 100px;
+  height: 50px;
 }
 
 .card-body h3 {
@@ -1341,4 +1341,12 @@ you can use the generic selector below, but it's slower:
 
 .tovar {
   text-align: center;
+}
+
+.card-price {
+  height: 45px;
+}
+
+.card-price p {
+  margin-top: 30px;
 }
